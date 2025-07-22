@@ -77,7 +77,7 @@ app.post("/api/contact", async (req, res) => {
 // 
 
 // Start server
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT || 5500 ;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
