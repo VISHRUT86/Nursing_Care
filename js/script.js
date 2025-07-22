@@ -12,7 +12,7 @@ const [staffs, setStaffs] = React.useState([]);
 
 React.useEffect(() => {
   if (currentPage === 'staffs') {
-    fetch('http://localhost:5500/api/staffs')
+    fetch('https://nursing-care.onrender.com/api/staffs')
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched staff:", data);
@@ -205,7 +205,7 @@ const handleAdminLogin = (e) => {
       message: formData.get("message"),
     };
 
-    fetch("http://localhost:5500/api/contact", {
+    fetch("https://nursing-care.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

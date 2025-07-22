@@ -9,7 +9,7 @@
 //   // 🔁 1. Fetch & Render Staff
 //   async function fetchStaff() {
 //     try {
-//       const res = await fetch("http://localhost:5500/api/staffs");
+//       const res = await fetch("https://nursing-care.onrender.com/api/staffs");
 //       const data = await res.json();
 
 //       staffTableBody.innerHTML = "";
@@ -59,7 +59,7 @@
 //       try {
 //         if (isEditing) {
 //           // Update request
-// const res = await fetch(`http://localhost:5500/api/staffs/${editingId}`, {
+// const res = await fetch(`https://nursing-care.onrender.com/api/staffs/${editingId}`, {
 //             method: "PUT",
 //             headers: { "Content-Type": "application/json" },
 //             body: JSON.stringify(staffData),
@@ -73,7 +73,7 @@
 //           staffForm.querySelector("button[type='submit']").textContent = "Add Staff";
 //         } else {
 //           // Create request
-//           const res = await fetch("http://localhost:5500/api/staffs", {
+//           const res = await fetch("https://nursing-care.onrender.com/api/staffs", {
 //             method: "POST",
 //             headers: { "Content-Type": "application/json" },
 //             body: JSON.stringify(staffData),
@@ -96,7 +96,7 @@
 //   // ✏️ 3. Edit Staff - fills the form for editing
 //   window.editStaff = async function (id) {
 //     try {
-//       const res = await fetch(`http://localhost:5500/api/staffs/${id}`);
+//       const res = await fetch(`https://nursing-care.onrender.com/api/staffs/${id}`);
 //       const staff = await res.json();
 
 //       document.getElementById("name").value = staff.name;
@@ -120,7 +120,7 @@
 //     if (!confirmDelete) return;
 
 //     try {
-//       const res = await fetch(`http://localhost:5500/api/staffs/${id}`, {
+//       const res = await fetch(`https://nursing-care.onrender.com/api/staffs/${id}`, {
 //         method: "DELETE",
 //       });
 
@@ -166,7 +166,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // 🔁 1. Fetch & Render Staff
   async function fetchStaff() {
     try {
-      const res = await fetch("http://localhost:5500/api/staffs");
+      const res = await fetch("https://nursing-care.onrender.com/api/staffs");
       const data = await res.json();
 
       staffTableBody.innerHTML = "";
@@ -216,7 +216,7 @@ window.addEventListener("DOMContentLoaded", () => {
       try {
         let res;
         if (isEditing) {
-          res = await fetch(`http://localhost:5500/api/staffs/${editingId}`, {
+          res = await fetch(`https://nursing-care.onrender.com/api/staffs/${editingId}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(staffData),
@@ -229,7 +229,7 @@ window.addEventListener("DOMContentLoaded", () => {
           editingId = null;
           staffForm.querySelector("button[type='submit']").textContent = "Add Staff";
         } else {
-          res = await fetch("http://localhost:5500/api/staffs", {
+          res = await fetch("https://nursing-care.onrender.com/api/staffs", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(staffData),
@@ -252,7 +252,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // ✏️ 3. Edit Staff - fills the form for editing
   window.editStaff = async function (id) {
     try {
-      const res = await fetch(`http://localhost:5500/api/staffs/${id}`);
+      const res = await fetch(`https://nursing-care.onrender.com/api/staffs/${id}`);
 
       // ⚠️ Check if response is JSON
       const contentType = res.headers.get("content-type");
@@ -283,7 +283,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`http://localhost:5500/api/staffs/${id}`, {
+      const res = await fetch(`https://nursing-care.onrender.com/api/staffs/${id}`, {
         method: "DELETE",
       });
 
