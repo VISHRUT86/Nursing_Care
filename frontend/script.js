@@ -612,7 +612,14 @@ const handleAdminLogin = (e) => {
             </form>
           </div>
         </div>
-       <div style={{ marginTop: "50px" }}>
+ <div className="contact-location" style={{ marginTop: "50px" }}>
+  <h3 style={{ fontSize: "24px", marginBottom: "10px" }}>
+    📍 Our Location
+  </h3>
+  <p style={{ fontSize: "16px", marginBottom: "20px" }}>
+    159/2, 3rd Floor, Durga Park Colony, Dashrathpuri, New Delhi, 110045
+  </p>
+
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14011.715252487388!2d77.0704882!3d28.6182879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d051f1b36a79d%3A0xb2c8ff0324969fc7!2sDashrathpuri%2C%20New%20Delhi%2C%20Delhi%20110045%2C%20India!5e0!3m2!1sen!2sin!4v1721722463722!5m2!1sen!2sin"
     width="100%"
@@ -623,6 +630,7 @@ const handleAdminLogin = (e) => {
     referrerPolicy="no-referrer-when-downgrade"
   ></iframe>
 </div>
+
 
       </div>
     </section>
