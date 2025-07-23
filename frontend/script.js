@@ -1337,7 +1337,7 @@ const renderStaffsPage = () => (
   <a
     href="#"
     className={currentPage === "staffs" ? "active" : ""}
-    onClick={() => setCurrentPage("staffs")}
+    onClick={() => navigate("staffs")}
   >
     Staffs
   </a>
