@@ -614,7 +614,7 @@ const handleAdminLogin = (e) => {
         </div>
         <div style={{ marginTop: "50px" }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.755837470482!2d72.83387431537798!3d19.0339872582279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cee5d9a1c1b1%3A0x9b9c9c9c9c9c9c9c!2s123%20Peaceful%20Lane%2C%20Mumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/search/?api=1&query=159%2F2%2C+3rd+floor+Durga+Park+Colony%2C+Dashrathpuri%2C+New+Delhi%2C+110045%2C+India"
             width="100%"
             height="400"
             style={{ border: "0", borderRadius: "10px" }}
