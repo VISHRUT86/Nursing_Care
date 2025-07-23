@@ -195,39 +195,39 @@ const handleAdminLogin = (e) => {
 
   // Handle form submission
   const handleContactSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    const formData = new FormData(e.target);
-    const submission = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
-    };
-
-    fetch("https://nursing-care.onrender.com/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(submission), // <-- FIXED: should be 'submission', not 'data'
-    })
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to send");
-        return res.json();
-      })
-      .then(() => {
-        alert("Message sent!");
-        e.target.reset(); // <-- FIXED: was 'event.target.reset()', should be 'e.target.reset()'
-      })
-      .catch((err) => {
-        console.error(err);
-        alert("Something went wrong.");
-      });
-
-    // Optional: Keep this only if you're using a state to show messages in frontend
-    // setContactSubmissions([...contactSubmissions, submission]);
+  const formData = new FormData(e.target);
+  const submission = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    phone: formData.get("phone"),
+    message: formData.get("message"),
   };
+
+  console.log("📨 Submitting contact form:", submission); // Debug log
+
+  fetch("https://nursing-care.onrender.com/api/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(submission),
+  })
+    .then((res) => {
+      if (!res.ok) throw new Error("❌ Failed to send");
+      return res.json();
+    })
+    .then(() => {
+      alert("✅ Message sent!");
+      e.target.reset();
+    })
+    .catch((err) => {
+      console.error("❌ Contact form error:", err);
+      alert("Something went wrong.");
+    });
+};
+
 
   // Admin functions
   const addService = () => {
