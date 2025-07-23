@@ -319,7 +319,12 @@ const handleAdminLogin = (e) => {
             living.
           </p>
           <div>
-            <button className="btn" onClick={() => navigate("contact")}>
+            <button className="btn" style={{
+      marginRight: "10px",
+      backgroundColor: "#25D366", // WhatsApp green
+      color: "white", // text white
+      border: "none", // optional: remove border
+    }} onClick={() => navigate("contact")}>
               Contact Us
             </button>
             <button
@@ -567,7 +572,12 @@ const handleAdminLogin = (e) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btn" style={{ marginRight: "10px" }}>
+                <button className="btn" style={{
+      marginRight: "10px",
+      backgroundColor: "#25D366", // WhatsApp green
+      color: "white", // text white
+      border: "none", // optional: remove border
+    }}>
                   <i
                     className="fab fa-whatsapp"
                     style={{ marginRight: "5px" }}
