@@ -180,7 +180,7 @@ const handleAdminLogin = (e) => {
   // ✅ Hardcoded admin credentials check
   if (username === "admin" && password === "admin123") {
     // ✅ Redirect to admin.html (keep this file in `public/js/admin.html`)
-    window.location.href = "./js/admin.html";
+    window.location.href = "admin.html";
   } else {
     alert("Invalid admin credentials");
   }
@@ -704,7 +704,7 @@ const renderStaffsPage = () => (
         <ul className="admin-nav">
           <li>
             <a
-              href="./admin.html"
+              href="admin.html"
               className={adminCurrentTab === "dashboard" ? "active" : ""}
               onClick={() => setAdminCurrentTab("dashboard")}
             >
