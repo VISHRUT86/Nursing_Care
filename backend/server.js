@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin:"https://vishrut86.github.io/Nursing_Care",
+    origin:"https://nursing-care-1.onrender.com",
 }));
 app.use(express.json());
 
