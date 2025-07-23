@@ -720,7 +720,7 @@ const renderStaffsPage = () => (
     if (isAdmin && isLoggedIn) return null;
 
     return (
-      <header>
+      <header id="main-header">
         <div className="container header-container">
           <div className="logo">
             KrishnaBest <span>NursingHomeCare</span>

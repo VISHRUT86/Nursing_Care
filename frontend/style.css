@@ -164,7 +164,7 @@
         }
 
         /* Header Styles */
-        header {
+        #main-header {
             background-color: var(--white);
             box-shadow: var(--soft-shadow);
             position: fixed;
