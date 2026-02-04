@@ -52,8 +52,7 @@ https://nursing-care-1.onrender.com/
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
-```bash
+ 1️⃣ Clone the Repository
 git clone https://github.com/your-username/Nursing_Care.git
 cd Nursing_Care
 
@@ -84,20 +83,7 @@ Backend deployed on Render
 
 Frontend served as static files
 
-Live URL:
-👉 https://nursing-care-1.onrender.com/
 
-📸 Screenshots
-
-Add screenshots of:
-
-Home page
-
-Admin dashboard
-
-Contact form
-
-(This will make your project look 🔥 on GitHub)
 
 🤝 Contribution
 
